@@ -7,35 +7,38 @@
     <title>Document</title>
     <link rel="stylesheet" href="style3.css">
 </head>
-<section class="parent-parent-container">
-    <div class="parent-container">
-        <video id="myVideo" controls>
-            <source src="teri.mp4" type="video/mp4">
-        </video>
-        <div class="container">
-            <h1>Heading</h1>
-            <p>Lorem ipsum...</p>
-            <button id="myBtn" onclick="myFunction()">Pause</button>
-        </div>
-    </div>
-
-</section>
-<script>
-    var video = document.getElementById("myVideo");
-    var btn = document.getElementById("myBtn");
-
-    function myFunction() {
-        if (video.paused) {
-            video.play();
-            btn.innerHTML = "Pause";
-        } else {
-            video.pause();
-            btn.innerHTML = "Play";
-        }
-    }
-</script>
 
 <body>
+    <section>
+        <a href="audio.html" target="_blank"> For Audio trial</a>
+    </section>
+    <section class="parent-parent-container">
+        <div class="parent-container">
+            <video id="myVideo" controls>
+            <source src="media/teri.mp4" type="video/mp4">
+        </video>
+            <div class="container">
+                <h1>Heading</h1>
+                <p>Lorem ipsum...</p>
+                <button id="myBtn" onclick="myFunction()">Pause</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+    </script>
+
 
 </body>
 
